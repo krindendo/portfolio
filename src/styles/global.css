@@ -73,6 +73,11 @@
   }
 }
 
+@page {
+  size: A4;
+  margin: 1.5cm;
+}
+
 @layer base {
   * {
     @apply border-border;

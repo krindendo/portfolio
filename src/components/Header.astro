@@ -2,18 +2,50 @@
 
 ---
 
-<header class="w-full space-y-6 flex flex-col items-center relative">
-  <h1 class="text-lg font-bold text-zinc-700 dark:text-zinc-200 anaglyph-text">
-    Marko Samek
-  </h1>
-  <div class="relative" style="width: 260px;">
+<header class="w-full space-y-6 flex flex-col items-center relative print:static">
+  <div class="flex flex-col items-center gap-1 text-center">
+    <h1 class="text-lg font-bold text-zinc-700 dark:text-zinc-200 anaglyph-text">
+      Marko Samek
+    </h1>
+    <p class="text-base text-zinc-600 dark:text-zinc-400">
+      Frontend Engineer · 6+ years · React · Next.js · TypeScript
+    </p>
+    <p class="text-sm text-zinc-600 dark:text-zinc-400">
+      <a
+        class="text-blue-600 hover:bg-blue-600 hover:text-white hover:rounded px-0.5"
+        href="mailto:hi@samekmarko.com"
+      >
+        hi@samekmarko.com
+      </a>
+      ·
+      <a
+        class="text-blue-600 hover:bg-blue-600 hover:text-white hover:rounded px-0.5"
+        target="_blank"
+        href="https://github.com/krindendo"
+      >
+        github.com/krindendo
+      </a>
+      ·
+      <a
+        class="text-blue-600 hover:bg-blue-600 hover:text-white hover:rounded px-0.5"
+        target="_blank"
+        href="https://www.linkedin.com/in/marko-samek"
+      >
+        linkedin.com/in/marko-samek
+      </a>
+    </p>
+    <p class="text-sm text-zinc-600 dark:text-zinc-400">
+      Open to remote work · UTC+1 · English B2
+    </p>
+  </div>
+  <div class="relative print:hidden" style="width: 260px;">
     <div
       class="absolute left-0 top-0 h-px bg-zinc-400"
       style="width: 90px; transform: translateX(85px) translateZ(0px);"
     >
     </div>
   </div>
-  <div class="absolute right-5 -top-9 md:fixed md:right-10 md:top-2">
+  <div class="absolute right-5 -top-9 md:fixed md:right-10 md:top-2 print:hidden">
     <button
       id="theme-btn"
       class="focus-outline p-2 sm:p-1 rounded-md border-2 border-zinc-500 dark:border-zinc-400"

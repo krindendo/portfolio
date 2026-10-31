@@ -31,5 +31,6 @@ Dark mode is driven by the `data-theme` attribute on `<html>`, not a `.dark` cla
 ## Conventions and gotchas
 
 - **Import aliases:** `tsconfig.json` defines `@/components/*`, `@/layouts/*`, `@/types` and `@/site-config`. `@/assets/*`, `@/data/*` and `@/utils/*` are also defined, but those directories don't exist yet. There is no alias for styles, so they use relative imports.
+- **PDF CV:** `marko-samek-cv.pdf` in the repo root is printed from the built page, using the `print:` classes and the `@page` rule in `global.css`. Reprint it whenever the page content changes.
 - **Strict types:** the project extends `astro/tsconfigs/strictest`, and `astro check` enforces this during the build.
 - **Missing assets:** `LayoutHead.astro` and `manifest.webmanifest` reference files that aren't in `public/`: `favicon.ico`, `icon.svg`, `apple-touch-icon.png`, `social-card.png`, `192x192.png` and `512x512.png`. Only `favicon.svg` exists, and nothing links to it.
